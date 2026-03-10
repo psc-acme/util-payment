@@ -1,0 +1,36 @@
+{
+    "name": "psc-acme/util-payment",
+    "description": "Package util-payment for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\UtilPayment\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/psr7": "^2.0",
+        "doctrine/doctrine-bundle": "^2.13"
+    },
+    "require-dev": {
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
